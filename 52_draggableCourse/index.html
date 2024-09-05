@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="course-list" data-drop="move">
+      <div draggable="true" data-effect="copy" class="item blue">语文</div>
+      <div draggable="true" data-effect="copy" class="item orange">数学</div>
+      <div draggable="true" data-effect="copy" class="item green">英语</div>
+      <div draggable="true" data-effect="copy" class="item yellow">音乐</div>
+    </div>
+    <div class="schedule">
+      <table border="1px" cellspacing="0">
+        <tr>
+          <th>周一</th>
+          <th>周二</th>
+          <th>周三</th>
+          <th>周四</th>
+          <th>周五</th>
+        </tr>
+
+        <tr>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+
+        <tr>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+
+        <tr>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+
+        <tr>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+          <td data-drop="copy"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
