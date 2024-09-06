@@ -49,7 +49,7 @@ function moveLeft() {
 
 function moveRight() {
   if(currentIndex === (count - 1)) {
-    doms.carouselList.style.transform = `translateX(0)`
+    doms.carouselList.style.transform = `translateX(100%)`
     doms.carouselList.style.transition = `none`
     // 强制渲染一次 再移动
     doms.carouselList.clientHeight
