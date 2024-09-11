@@ -1,0 +1,17 @@
+.item {
+  width: 50%;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  inset: 0;
+  background-color: aqua;
+}
