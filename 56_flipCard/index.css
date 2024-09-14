@@ -1,0 +1,34 @@
+.card {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  perspective: 500px;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  transition: .5s;
+  backface-visibility: hidden;
+}
+
+.card:hover img {
+  transform: rotateY(180deg);
+}
+
+.card p {
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: aqua;
+  transition: .5s;
+}
+
+.card:hover p {
+  transform: rotateY(0);
+}
