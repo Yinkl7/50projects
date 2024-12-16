@@ -2,7 +2,7 @@ const container = document.querySelector('.container')
 
 let source = null
 container.ondragstart = (e) => {
-  e.dataTransfer.effectAllowed = 'copy'
+  e.dataTransfer.effectAllowed = e.target.dataset.effect
   source = e.target
 }
 
@@ -27,7 +27,7 @@ container.ondragenter = (e) => {
   }
 }
 
-// 存在课程且拖动到课程上，那么就取当前课程的父级
+// 课表上存在课程且拖动到课程上，那么就取当前课程的父级
 function getDropNode(node) {
   while(node) {
     if(node.dataset && node.dataset.drop) {
